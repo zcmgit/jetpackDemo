@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/roomFragment"
+        android:name="com.example.jetpack.room.RoomFragment"
+        android:label="RoomFragment" >
+        <action
+            android:id="@+id/action_roomFragment_to_addUserInfoFragment"
+            app:destination="@id/addUserInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mvvmFragment"
+        android:name="com.example.jetpack.mvvm.view.fragment.MvvmFragment"
+        android:label="MvvmFragment" >
+        <action
+            android:id="@+id/action_mvvmFragment_to_contentFragment"
+            app:destination="@id/contentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.jetpack.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_mvvmFragment"
+            app:destination="@id/mvvmFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_roomFragment"
+            app:destination="@id/roomFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_roomFragment2"
+            app:destination="@id/roomFragment2" />
+        <action
+            android:id="@+id/action_mainFragment_to_padingFragment"
+            app:destination="@id/padingFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_pagingRequestFragment"
+            app:destination="@id/pagingRequestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contentFragment"
+        android:name="com.example.jetpack.mvvm.view.fragment.ContentFragment"
+        android:label="ContentFragment" />
+    <fragment
+        android:id="@+id/addUserInfoFragment"
+        android:name="com.example.jetpack.room.AddUserInfoFragment"
+        android:label="AddUserInfoFragment" />
+    <fragment
+        android:id="@+id/roomFragment2"
+        android:name="com.example.jetpack.roomrxjava.RoomFragment"
+        android:label="RoomFragment" >
+        <action
+            android:id="@+id/action_roomFragment2_to_addUserInfoFragment3"
+            app:destination="@id/addUserInfoFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/addUserInfoFragment3"
+        android:name="com.example.jetpack.roomrxjava.AddUserInfoFragment"
+        android:label="AddUserInfoFragment" />
+    <fragment
+        android:id="@+id/padingFragment"
+        android:name="com.example.jetpack.paging.room.PagingFragment"
+        android:label="PadingFragment" />
+    <fragment
+        android:id="@+id/pagingRequestFragment"
+        android:name="com.example.jetpack.paging.request.PagingRequestFragment"
+        android:label="PagingRequestFragment" />
+</navigation>

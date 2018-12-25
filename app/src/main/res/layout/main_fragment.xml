@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/title_layout"/>
+
+    <Button
+        android:id="@+id/mvvmStartBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="MVVM模式"
+        
+        />
+
+    <Button
+        android:id="@+id/roomStartBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="room测试" />
+
+    <Button
+        android:id="@+id/roomRxjavaStartBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="room + RxJava测试" />
+
+    <Button
+        android:id="@+id/padingBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Pading + room测试" />
+
+    <Button
+        android:id="@+id/padingRequestBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Pading + 网络请求测试" />
+</LinearLayout>
